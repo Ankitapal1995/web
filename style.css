@@ -1,0 +1,130 @@
+
+body{
+    margin:0px;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+/* .outer-div{
+    background-color:#CCD6A6;
+} */
+.top-container {
+    position:relative;
+    padding-top: 100px;
+    background-color:#E3DFFD;
+    height:600px;
+    
+}
+
+/* 16px =100% = 1em, so if you want to use 40px, 40/16*100 = 250%  or 40/16=2.5em*/
+/* use rem always instead of % or em, it would ignore root size or upstream size setting */
+h1{
+    /* position:absolute; */
+    margin: 50px auto 0 auto;
+    font-size: 2.5rem;       
+    font-family: 'Sacramento', cursive;
+    color: #66BFBF;
+    line-height: 12px;
+    /* font-size:xx-large; */
+    /* left:40%;
+    top:10%; */
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size:1.2rem;
+    color: #66BFBF;
+    font-weight: normal;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+}
+p{
+
+}
+.cloud-top{
+    position:absolute;
+    width:130px;
+    height:130px;
+    left:60%;
+    top:4%;
+    }
+.cloud-bottom{
+        position:absolute;
+        width:130px;
+        height:130px;
+        left:30%;
+        top:25%;
+        }
+.mountain{
+    position:absolute;
+    /* padding-top: 70px; */
+    margin-top: 80px;
+    width:1300px;
+    height:540px;
+    top:100px;
+    left: 0.01em;
+    border:none;
+
+}
+
+.middle-container{
+    padding-top: 50px;
+    background-color:#CCEABB;
+}
+
+/* .prof_image{
+    position:absolute;
+    width:100px;
+    height:100px;
+} */
+
+.bottom-container{ 
+}
+
+
+
+.footer-link{
+    color: #11999E;
+}
+
+.skill-row{
+    width:50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    /* line-height: 2px; */
+
+}
+
+.skill-row1{
+    width:50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+}
+
+.skill-row2{
+    width:50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+}
+
+.code-image{
+    width:150px;
+    float:left;
+    margin-right: 30px;
+}
+
+.profile_pic{
+    width:200px;
+}
+
+.AI-img{
+    width:150px;
+    float:right;
+    margin-right: 30px;
+}
+
+.biology{
+    width:150px;
+    float:left;
+    margin-right: 30px;
+}
