@@ -78,13 +78,38 @@ p{
     height:100px;
 } */
 
-.bottom-container{ 
+.bottom-container {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
+.footer-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
 
+.footer-link:hover {
+    color: #ffdd57;
+}
 
-.footer-link{
-    color: #11999E;
+.bottom-container p {
+    margin: 6px 0 0;
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+    .footer-link {
+        display: block;
+        margin: 10px 0;
+    }
 }
 
 .skill-row{
@@ -106,7 +131,16 @@ p{
     margin: 100px auto 100px auto;
     text-align: left;
 }
-
+.skill-row3{
+    width:50%;
+    margin: 90px auto 100px auto;
+    text-align: left;
+}
+.skill-row4{
+    width:50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+}
 .code-image{
     width:150px;
     float:left;
@@ -114,7 +148,8 @@ p{
 }
 
 .profile_pic{
-    width:200px;
+    margin-top: 6px;
+    width:120px;
 }
 
 .AI-img{
@@ -124,6 +159,16 @@ p{
 }
 
 .biology{
+    width:150px;
+    float:left;
+    margin-right: 30px;
+}
+.os{
+    width:150px;
+    float:right;
+    margin-right: 30px;
+}
+.others{
     width:150px;
     float:left;
     margin-right: 30px;

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankita</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+        /* Add your custom styles here */
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .middle-container{
+            padding: 0px;
+            margin: 0px;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 16px 20px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+            
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #555;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-container" id="home">
+        <h1>I'm Ankita Pal</h1>
+        <h2>A computational biologist</h2>
+        <img class="cloud-top" src="cloud-emoji-clipart-md-4128355173.png" alt="cloud image">
+        <img class="cloud-bottom" src="cloud-emoji-clipart-md-4128355173.png" alt="cloud image">
+        <img class="mountain" src="clipart-mountain-background-1.png" alt="mountain image">
+    </div>
+    
+    <div class="middle-container">
+      <div class="navbar">
+        <button><a href="#home">Home</a></button>
+        <div class="dropdown">
+            <button class="dropbtn">Menu 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#publications">Publications</a>
+            </div>
+        </div>
+      </div> 
+        <div class="profile" id="about">
+          <img class="profile_pic" src="profile.png" alt="profile picture">
+          <p>I am a senior research fellow in Computational Biology.</p>
+        </div>
+        <hr>
+        <div class="skills" id="work">
+          <h2>My Skills</h2>
+          <div class="skill-row">
+            <img class="code-image" src="code.png" alt="coding image">
+            <h3>Coding</h3>
+            <p>I am proficient in Python. I also learned web programming: HTML, CSS, JavaScript.</p>
+          </div>
+          <div class="skill-row1">
+            <img class="AI-img" src="artificial-intelligence.png" alt="AI image">
+            <h3>Artificial Intelligence</h3>
+            <p>I have been learning Machine Learning and Deep Learning for the last 4 years.</p>
+          </div>
+          <div class="skill-row2">
+            <img class="biology" src="genetics.png" alt="DNA image">
+            <h3>Biological Data Analysis</h3>
+            <p>Variant calling, Molecular docking, Data analysis.</p>
+          </div>
+        </div>
+        <hr>
+        <div class="contact-me" id="publications">
+          <h2>Get In Touch</h2>
+          <h3>Here is my contact number</h3>
+          <p>Please feel free to contact me.</p>
+          <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
+        </div>
+      </div>
+      
+      <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+        <a class="footer-link" href="https://twitter.com/">Twitter</a>
+        <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+        <p>© Ankita Pal.</p>
+      </div>
+</body>
+</html>

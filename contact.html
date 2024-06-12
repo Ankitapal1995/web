@@ -1,51 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>contact</title>
+  <title>Contact Details</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-image: url('background_contact.jpg');
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      text-align: right;
+    }
+    
+    h1 {
+      text-align: right;
+      margin-bottom: 30px;
+    }
+    
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: right;
+      margin-bottom: 30px;
+    }
+    
+    .contact-info p {
+      margin: 10px 0;
+    }
+    
+    .social-media {
+      /*display: flex;
+      justify-content: center; */
+      align-items: right;
+    }
+    
+    .social-media a {
+      margin: 0 10px;
+      align-items: right;
+    }
+    
+    .social-media img {
+      width: 40px;
+      height: 40px;
+      align-items: right;
+    }
+  </style>
 </head>
 <body>
-    <h1>my contact</h1>
-    <p><strong>email id - ap578817@gmail.com</strong></p>
-    <p><strong>mobile no. - 8240359706</strong></p>
-   <!-- input type="search" name="" id=""> -->
-    <h2>Do you want to Connect with us?</h2>
-    <form action="mailto:name@rapidtables.com" method="post"></form>
-        <label for="">Enter your name:</label>
-        <input type="text"><br><br>
-
-        <label for="">Choose a user id</label>
-        <input type="text"><br><br>
-
-        <label for="">Choose a password</label>
-        <input type="password" name="" id="">
-
-        <label for="">Enter email id</label>
-        <input type="email" name="" id=""><br><br>
-        <label for="">Selet your gender</label>
-        <select name="select">
-            <option value="value1">Female</option> 
-            <option value="value2" selected>Male</option>
-            <option value="value3">Third gender</option>
-          </select><br><br>
-        <label for="">Enter your date of birth</label>
-        <input type="date" name="" id=""><br><br>
-        <label for="">Rate my profile</label>
-        <input type="range" name="" id=""><br><br>
-        <label for="">Enter your favourite color</label>
-        <input type="color" name="" id=""><br><br>
-        <label for="">Write some suggestion</label>
-        <input type="text" name="" id=""><br><br>
-        <h3>Are you interested to work with me?</h3>
-        <label for="">Select yes/no</label>
-        <input type="checkbox" name="" id=""><br><br>
-        <label for="">Upload your CV</label>
-        <input type="file" name="" id=""><br><br>
-        <label>Write your message:</label><br>
-        <textarea name="" id="" cols="30" rows="5"></textarea>
-        <input type="submit" value="Submit">
-
-    </form>
-
+  <div class="container">
+    <h1>Contact Details</h1>
+    
+    <div class="contact-info">
+      <h3>Email: ap578817@gmail.com</h3>
+      <h3>Alternative Email: ankitap2019@nii.ac.in</h3>
+      <h3>Contact Number: +918240359706</h3>
+      <h3>WhatsApp Number: +919563184803</h3>
+    </div>
+    
+    <div class="social-media">
+      <a href="https://www.linkedin.com/in/ankitapalphd/" target="_blank">
+        <img src="linkedin.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/Ankitapal1995" target="_blank">
+        <img src="github.png" alt="GitHub">
+      </a>
+      <a href="mailto:ap578817@gmail.com">
+        <img src="email.png" alt="Email">
+      </a>
+      <a href="https://wa.me/+919563184803">
+        <img src="whatsapp.png" alt="WhatsApp">
+      </a>
+    </div>
+  </div>
 </body>
 </html>

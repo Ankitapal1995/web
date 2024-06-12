@@ -6,63 +6,182 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ankita</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Add your custom styles here */
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .middle-container{
+            padding: 0px;
+            margin: 0px;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            opacity: 0.5;
+            margin-top:20px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+        
+        .navbtn, .dropbtn {
+            background-color: #333;
+            color: white;
+            padding: 14px 20px;
+            margin: 0;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        .navbtn:hover, .dropdown:hover .dropbtn {
+            background-color: #555;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="top-container">
+    <div class="top-container" id="home">
         <h1>I'm Ankita Pal</h1>
         <h2>A computational biologist</h2>
-        <img class="cloud-top" src="cloud-emoji-clipart-md-4128355173.png" alt="cloud-img">
-        <img class="cloud-bottom" src="cloud-emoji-clipart-md-4128355173.png" alt="cloud-img">
-        <img class="mountain"><img class='mountain' src="clipart-mountain-background-1.png" alt="mountain-img">
+        <img class="cloud-top" src="cloud-emoji-clipart-md-4128355173.png" alt="cloud image">
+        <img class="cloud-bottom" src="cloud-emoji-clipart-md-4128355173.png" alt="cloud image">
+        <img class="mountain" src="clipart-mountain-background-1.png" alt="mountain image">
     </div>
     
-    
     <div class="middle-container">
-        <div class="profile">
-          <img class="profile_pic" src="profile.png" alt="profile_picture">
-          <h2></h2>
-          <p>I am senior research fellow in Computational Biology.</p>
+        <div class="navbar">
+            <a href="index.html" class="navbtn">Home</a>
+            <a href="about.html" class="navbtn">About</a>
+            <a href="pub.html" class="navbtn">Publication</a>
+            <a href="ach.html" class="navbtn">Achievement</a>
+            <a href="contact.html" class="navbtn">Contact</a>
+            <!-- <div class="dropdown">
+                <div class="dropdown-content">
+                    <a href="#talk1">Talk 1</a>
+                    <a href="#talk2">Talk 2</a>
+                    <a href="#talk3">Talk 3</a>
+                </div>
+            </div> -->
+        </div>
+        <div class="profile" id="about">
+          <img class="profile_pic" src="profile.png" alt="profile picture">
+          <p>With five years of extensive experience in biological data analysis,
+            pattern recognition, machine learning, deep learning, and proficient Python programming skills,
+            I excel in tackling complex challenges related to antibiotic resistance prediction. 
+            My expertise extends to functional and structural analysis of proteins, where I actively contribute to the development of pipelines and web deployment strategies.
+            Passionate about exploring new and emerging technologies,
+            I am dedicated to the critical area of drug development, particularly in combating bacterial resistance through innovative solutions.
+            My robust problem-solving and analytical abilities uniquely position me to drive advancements in this field and make a meaningful impact on healthcare outcomes.</p>
         </div>
         <hr>
-        <div class="skills">
-          <h2>My Skills.</h2>
+        <div class="skills" id="work">
+          <h2>My Skills</h2>
           <div class="skill-row">
             <img class="code-image" src="code.png" alt="coding image">
             <h3>Coding</h3>
-            <p>I am proficient in python. I also learned web programming. html, css, java-script </p>
+            <p>I am proficient in Python and web programming, including HTML, CSS, JavaScript, Python Flask, Apache server</p>
           </div>
           <div class="skill-row1">
             <img class="AI-img" src="artificial-intelligence.png" alt="AI image">
-            <h3>Artificial-intelligence</h3>
-            <p>I have been learning Machine learning, Deep learning from last 4 years</p>
+            <h3>Artificial Intelligence</h3>
+            <p>I have five years of experience in Machine Learning, Deep Learning, Interpretable AI</p>
           </div>
           <div class="skill-row2">
-            <img class="biology" src="genetics.png" alt="dna image">
-            <h3>Biological data analysis</h3>
-            <p>Variant calling, Molecular docking, data analysis</p>
+            <img class="biology" src="genetics.png" alt="DNA image">
+            <h3>Biological Data Analysis</h3>
+            <p>Genomics, Variant calling, Molecular docking, Data analysis, Bioinformatics pipeline development, Virtual Screening, Molecular dynamics simulation</p>
+          </div>
+          <div class="skill-row3">
+            <img class="os" src="computer.png" alt="computer">
+            <h3>Operating Systems</h3>
+            <p>I am familiar with Linux and Windows operating systems</p>
+          </div>
+          <div class="skill-row4">
+            <img class="others" src="technical.png" alt="tech">
+            <h3>Others</h3>
+            <p>Conda, Git, Excel, Powerpoint, Matplotlib, ggplot, seaborn, Pandas, Numpy, Strong problem solving skills, Project Leadership</p>
           </div>
         </div>
         <hr>
-        <div class="contact-me">
+        <div class="contact-me" id="publications">
           <h2>Get In Touch</h2>
-          <h3>Here is my contact number</h3>
-          <p>Please feel free to contact me</p>
+          <p>Please feel free to contact me.</p>
           <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
         </div>
       </div>
       
-      
       <div class="bottom-container">
-        <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-        <a class="footer-link" href="https://twitter.com/">Twitter</a>
-        <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
-        <p>© Name Surname.</p>
-      </div>
-           
+        <a class="footer-link" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a class="footer-link" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a class="footer-link" href="https://www.appbrewery.co/" target="_blank"><i class="fas fa-globe"></i></a>
+        <p>All work © Ankita Pal • all rights reserved</p>
+    </div>
+    
+
+
+
+    <script>
+        document.querySelectorAll('.navbtn, .dropbtn').forEach(button => {
+            button.addEventListener('click', function(event) {
+                const dropdowns = document.querySelectorAll('.dropdown-content');
+                dropdowns.forEach(dropdown => {
+                    if (dropdown.style.display === 'block') {
+                        dropdown.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                const dropdowns = document.querySelectorAll('.dropdown-content');
+                dropdowns.forEach(dropdown => {
+                    if (dropdown.style.display === 'block') {
+                        dropdown.style.display = 'none';
+                    }
+                });
+            }
+        }
+        
+        
+    </script>
 </body>
 </html>
