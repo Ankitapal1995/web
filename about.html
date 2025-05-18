@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
@@ -30,6 +31,14 @@
             text-transform: uppercase;
             margin: 0;
             font-size: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        header h1 img {
+            height: 120px;
+            width: 120px;
         }
         .main {
             padding: 20px;
@@ -44,15 +53,15 @@
             padding-bottom: 5px;
             margin-bottom: 10px;
         }
-        ul {
-            list-style: none;
-            padding: 0;
+        ul, ol {
+            padding-left: 20px;
         }
-        ul li {
+        ul li, ol li {
             padding: 5px 0;
         }
         .skills ul {
             columns: 2;
+            padding: 0;
         }
         .skills ul li {
             background: #ccffeb;
@@ -60,62 +69,84 @@
             margin: 5px;
             padding: 5px;
             border-radius: 5px;
+            list-style: none;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>About Me</h1>
+            <h1>
+                <img src="cloud_about_me.png" alt="About Icon">
+                Hi!
+            </h1>
         </div>
     </header>
     <div class="container">
         <div class="main">
             <h2 class="section-title">Experience</h2>
-            <h3>National Institute of Immunology</h3>
-            <h5>Senior Researcher (July 2019 - June 2024)</h5>
-            <ol>
-                <li>Developed an AI-based tool for Mycobacterium tuberculosis to predict its drug resistance and susceptibility using whole genome sequence.</li>
-                <li>Prediction of novel drug resistance markers using interpretable AI and functional, structural study to find mechanistic details.</li>
-                <li>Structure-based analysis of Mycobacterium tuberculosis proteins using AlphaFold2 protein structure prediction database and other conventional protein structure prediction databases.</li>
-                <li>Resistant breaker small molecule designing.</li>
-            </ol>
-            <h3>Indian Institute of Science Education & Research (IISER), Kolkata</h3>
-            <h5>Project Trainee </h5>
+            <h3>Pupil Bio Inc. (Houston, Texas, USA)</h3>
+            <h5>Bioinformatics Scientist I (March 2015 to Current)</h5>
+            <br>
+            <h3>National Institute of Immunology (New Delhi, India)</h3>
+            <h5>Senior Research Fellow (Project) (June 2024 to March 2025)</h5>
             <ul>
-                <li>Study of essential stress protein associated with ribosome in E.coli to cope with shock condition.</li>
+                <li>Developed a variant calling pipeline named DraVAR (Bash & Nextflow) with gradation-based annotation. <a href="https://github.com/Ankitapal1995/DraVAR.git" target="_blank">GitHub</a></li>
+                <li>Built a scRNA-seq analysis pipeline with Seurat and RShiny to study antimicrobial peptide activity. <a href="https://github.com/Ankitapal1995/scRNAseq.git" target="_blank">GitHub</a></li>
+                <li>Developed a pipeline for predicting antibiotic resistance, deployed as InTGS. <a href="https://intgs.nii.ac.in/InTGS/index.php" target="_blank">InTGS</a></li>
             </ul>
+
+            <h5>PhD Student (July 2019 - June 2024)</h5>
+            <ul>
+                <li>Developed TB-AMRpred: AI/ML tool for predicting drug resistance from M. tuberculosis WGS data. <a href="http://www.nii.ac.in/TB-AMRpred.html" target="_blank">Web Server</a></li>
+                <li>Performed structural analysis and binding pocket identification using AlphaFold2; developed MutMapTB. <a href="http://www.nii.ac.in/MutMapTB_database.html" target="_blank">Database</a></li>
+                <li>Conducted virtual screening of small molecules to combat drug resistance.</li>
+            </ul>
+
+            <h3>Indian Institute of Science Education & Research (IISER), Kolkata</h3>
+            <h5>Project Trainee (Jan 2017 – Dec 2018)</h5>
+            <ul>
+                <li>Studied essential stress proteins associated with ribosomes in E. coli under shock conditions.</li>
+            </ul>
+
             <h2 class="section-title">Education and Training</h2>
             <ol>
-                <li>University of Kalyani  M.Sc, Biochemistry</li>
-                <li>University of Kalyani  B.Sc, Chemistry</li>
+                <li>Ph.D., National Institute of Immunology</li>
+                <li>M.Sc, Biochemistry – University of Kalyani</li>
+                <li>B.Sc, Chemistry – University of Kalyani</li>
             </ol>
+
             <h2 class="section-title">Skills</h2>
             <div class="skills">
                 <ul>
-                    <li>Python</li>
-                    <li>Matplotlib, Seaborn, ggplot</li>
-                    <li>Genomics</li>
-                    <li>Variant calling</li>
-                    <li>Bioinformatics pipeline</li>
-                    <li>Docking</li>
-                    <li>Molecular Dynamics Simulation</li>
-                    <li>Virtual Screening</li>
-                    <li>Data analysis</li>
-                    <li>Machine learning</li>
-                    <li>Deep learning</li>
-                    <li>Python Flask</li>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
+                    <li>Linux (5+ yrs)</li>
+                    <li>Windows (10+ yrs)</li>
+                    <li>Python (5+ yrs)</li>
+                    <li>R (5+ yrs)</li>
+                    <li>Bash Scripting (5+ yrs)</li>
+                    <li>Genome Assembly</li>
+                    <li>Variant Calling</li>
+                    <li>Antibiotic Resistance Prediction</li>
+                    <li>RNA-seq and scRNA-seq Analysis</li>
+                    <li>Nextflow</li>
+                    <li>FastQC, Trimmomatic, BWA, Samtools, Bcftools</li>
+                    <li>snpEff, SNIPPY, DESeq2, Rsamtools, GSEA</li>
+                    <li>Seurat</li>
+                    <li>Matplotlib, Seaborn, ggplot2</li>
+                    <li>upsetR, tidyverse</li>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Python Flask, Apache2, R Shiny</li>
+                    <li>AWS, HPC clusters</li>
+                    <li>Scikit-learn, Weka</li>
+                    <li>TensorFlow</li>
+                    <li>spaCy, SHAP, LIME</li>
+                    <li>Regular Expressions</li>
+                    <li>Conda, Pip</li>
                     <li>Git and GitHub</li>
-                    <li>Excel, PowerPoint</li>
-                    <li>Interpretable AI</li>
-                    <li>Databases</li>
-                    <li>Strong problem-solving skills</li>
+                    <li>Strong Problem-Solving Skills</li>
                     <li>Project Leadership</li>
-                    <li>Web development</li>
-                    <li>Attention To Detail</li>
+                    <li>Attention to Detail</li>
+                    <li>Team Work</li>
                 </ul>
             </div>
         </div>
