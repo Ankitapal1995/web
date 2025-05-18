@@ -4,29 +4,50 @@
     <title>Coming Soon</title>
     <style>
         body {
-            background-image: url('background_pub.jpg');
-            background-size: cover;
+            background-image: url('kitty.png');
+            background-color: #CCEABB;   
+            background-size: 150px 150px;
             background-position: center;
             background-repeat: no-repeat;
             opacity: 0.8;
             filter: alpha(opacity=50); /* For IE8 and earlier */
-            height: 100vh;
+            height: 50vh;
             display: flex;
             justify-content: center;
             align-items: center;
             font-family: 'Montserrat', sans-serif;
         }
         
-        .coming-soon {
-            font-size: 90px;
-            font-weight: bold;
-            color: #080808;
-            text-align: center;
-            opacity: 100%;
-        }
+        .pub {
+        height: 2px;                   
+        width: 80%;                     
+        background-color: black;        
+        margin: auto;                   
+        position: absolute;
+        top: 40%;                      
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     </style>
 </head>
 <body>
-    <div class="coming-soon">Coming soon....</div>
+     <div class="pub">
+    <ol>
+        <li>
+            Pal, S*., <b>Pal, A.</b> and Mohanty, D. (2024) 
+            SG-ML-PLAP: A structure-guided machine learning-based scoring function for protein-ligand binding affinity prediction. 
+            <em><b>Protein Science</b></em>. 
+            <a href="https://doi.org/10.1002/pro.5257" target="_blank">https://doi.org/10.1002/pro.5257</a>
+        </li>
+        <br><br>
+        <li>
+            <b>Pal, A*.</b> and Mohanty, D. (2024) 
+            Machine learning-based approach for prediction of genotypic drug resistance and identification of new resistance associated mutations from whole genome sequences of <i>Mycobacterium tuberculosis</i>.
+            <em><b>Bioinformatics Advances</b></em>. 
+            <a href="https://doi.org/10.1093/bioadv/vbaf050" target="_blank">https://doi.org/10.1093/bioadv/vbaf050</a>
+        </li>
+    
+    </ol>
+</div>
 </body>
 </html>
