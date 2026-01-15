@@ -1,193 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Projects & Contributions</title>
-
-    <style>
-        body {
-            font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f8f9fb;
-            color: #2c2c2c;
-            margin: 0;
-            padding: 40px;
-            line-height: 1.7;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background: #ffffff;
-            padding: 40px 50px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-            border-radius: 10px;
-        }
-
-        h2 {
-            font-size: 28px;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            border-bottom: 3px solid #4f46e5;
-            padding-bottom: 10px;
-            margin-bottom: 35px;
-            color: #1f2937;
-        }
-
-        h3 {
-            font-size: 20px;
-            margin-top: 35px;
-            margin-bottom: 12px;
-            color: #111827;
-        }
-
-        p {
-            font-size: 15.5px;
-            margin-bottom: 12px;
-            text-align: justify;
-        }
-
-        a {
-            color: #4f46e5;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        i {
-            color: #374151;
-        }
-
-        .link-block {
-            margin-top: 6px;
-        }
-
-        .section {
-            margin-bottom: 28px;
-        }
-
-        /* Subtle separation between projects */
-        .section:not(:last-child) {
-            border-bottom: 1px solid #e5e7eb;
-            padding-bottom: 28px;
-        }
-
-        /* Print-friendly */
-        @media print {
-            body {
-                background: none;
-                padding: 0;
-            }
-
-            .container {
-                box-shadow: none;
-                padding: 0;
-            }
-
-            a {
-                color: black;
-                text-decoration: none;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Project Portfolio – Ankita Pal</title>
+<style>
+:root {
+  --primary: #1f3c88;
+  --secondary: #f5f7fb;
+  --accent: #e63946;
+  --text: #2b2b2b;
+  --muted: #6b7280;
+}
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--secondary);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+h1 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+.subtitle {
+  text-align: center;
+  color: var(--muted);
+  margin-bottom: 40px;
+}
+.project {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin-bottom: 28px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+.project h2 {
+  margin-top: 0;
+  color: var(--primary);
+  font-size: 1.35rem;
+}
+.project p {
+  white-space: pre-line;
+}
+.links {
+  margin-top: 10px;
+}
+.links a {
+  display: inline-block;
+  margin-right: 15px;
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+}
+.links a:hover {
+  text-decoration: underline;
+}
+.footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 50px;
+}
+</style>
 </head>
+
 <body>
-
 <div class="container">
+<h1>Projects & Contributions</h1>
+<div class="subtitle"><em>Computational Biology</em> • <em>AI/ML</em> • <em>Multi-Omics</em></div>
 
-<h2>PROJECTS & CONTRIBUTIONS</h2>
-
-<div class="section">
-<h3>TB-AMRpred: AI/ML-Based Drug Resistance Prediction</h3>
-
+<div class="project">
+<h2>TB-AMRpred: AI/ML-Based Drug Resistance Prediction</h2>
 <p>
-An AI/ML-based model was designed using whole genome sequencing data without relying on any known drug resistance biomarkers to predict resistance in <i>Mycobacterium tuberculosis</i> for 13 drugs. Explainable AI was integrated to identify both known and novel resistance-associated biomarkers. The model was validated on an independent test dataset, achieving high sensitivity (90%–95%) and specificity (94%–99%).
+This project aimed to predict antimicrobial resistance in <i>Mycobacterium tuberculosis</i> using <b>whole-genome sequencing (WGS)</b> data without relying on predefined resistance markers. Machine learning and deep learning models were developed using <b>XGBoost and artificial neural networks (ANN)</b> and validated on independent datasets. <b>SHAP-based explainable AI</b> was applied to interpret model predictions and identify both known and novel resistance-associated mutations. The models achieved strong predictive performance <b>(90–95% sensitivity and 94–99% specificity across 13 antitubercular drugs)</b> and were implemented as a standalone analytical tool using Python and Bash, with deployment via a web server built using <b>Python Flask and Apache</b> for end-user access.
 </p>
+<div class="links">
+<a href="https://github.com/Ankitapal1995/TB-AMRpred.git">GitHub</a>
+<a href="http://www.nii.ac.in/TB-AMRpred.html">Web server</a>
+<a href="https://doi.org/10.1093/bioadv/vbaf050">Article link</a>
+</div>
+</div>
 
-<p class="link-block">
-Github: <a href="https://github.com/Ankitapal1995/TB-AMRpred.git">https://github.com/Ankitapal1995/TB-AMRpred.git</a><br>
-Web server: <a href="http://www.nii.ac.in/TB-AMRpred.html">http://www.nii.ac.in/TB-AMRpred.html</a><br>
-Article link: <a href="https://doi.org/10.1093/bioadv/vbaf050">https://doi.org/10.1093/bioadv/vbaf050</a>
+<div class="project">
+<h2>Single-Cell RNA-Seq Analysis of Drug Resistance Biomarkers in Breast Cancer</h2>
+<p>
+This project aimed to identify cell type–specific biomarkers underlying erlotinib resistance in breast cancer using single-cell RNA sequencing (scRNA-seq). Forty human breast cancer samples (20 erlotinib-resistant and 20 drug-sensitive) were analyzed using a standardized scRNA-seq workflow implemented in <b>Seurat</b>, with <b>Harmony</b> applied for batch correction and <b>CellTypist</b> used for cell type annotation. Marker gene identification and <b>gene set enrichment analysis (GSEA)</b> revealed enrichment of proliferation and metabolism-related pathways (MYC, E2F, oxidative phosphorylation) in drug-sensitive samples, while drug-resistant samples showed activation of inflammatory, survival, and EMT-associated pathways (TNF-α/NF-κB, JAK/STAT, hypoxia), highlighting distinct transcriptional programs associated with therapeutic response and resistance.
+</p>
+<div class="links">
+<a href="https://github.com/Ankitapal1995/biomarker-drugresistance-scrna.git">GitHub</a>
+</div>
+</div>
+
+<div class="project">
+<h2>DraVAR: Variant Analysis and Resistance Biomarker Discovery Using Statistical-Based Methods</h2>
+<p>
+DraVAR is a <b>Nextflow-based pipeline </b>(also implemented in <b>Bash</b>) for analyzing <b>whole genome sequencing (WGS)</b> data to identify variants associated with drug resistance in <i>Mycobacterium tuberculosis</i>. It integrates well known tools for <b>quality control (FastQC, Trimmomatic)</b>, <b>alignment (BWA-MEM), variant calling (Samtools, bcftools), and annotation (SnpEff)</b>. Using WHO-recommended statistical methods, mutations are graded by confidence levels (high, moderate, low association) based on prevalence and functional impact. The pipeline achieves <b>over 80% accuracy</b> against the gold standard mutation catalogues.
+</p>
+<div class="links">
+<a href="https://github.com/Ankitapal1995/DraVAR.git">GitHub</a>
+</div>
+</div>
+
+<div class="project">
+<h2>OncoVAR: Cancer-Specific Somatic Variant Detection</h2>
+<p>
+OncoVAR is a custom pipeline for detecting cancer-specific somatic mutations from matched tumor-normal <b>Next Generation Sequencing (NGS)</b> data. It employs <b>Samtools and bcftools</b> for variant calling, benchmarks against Mutect2 and VarScan2, and validates findings using a reference gene list to ensure accurate identification of tumor-exclusive mutations. Notably, <b>OncoVAR identified additional mutations in EGFR, CDKN2A, TP53, and MED12 genes missed by Mutect2 and VarScan2</b>, demonstrating enhanced sensitivity in mutation detection.
+</p>
+<div class="links">
+<a href="https://github.com/Ankitapal1995/OncoVAR.git">GitHub</a>
+</div>
+</div>
+
+<div class="project">
+<h2>InTGS: Tuberculosis Genomic Surveillance Platform</h2>
+<p>
+A genomic pipeline was developed to predict antibiotic resistance from <b>tuberculosis patient samples</b>. It was deployed as part of the Indian Tuberculosis Genomic Surveillance Consortium (InTGS), <b>an initiative of the Indian government that collaborates with 10 prominent Indian institutes</b>. The pipeline analyzes drug resistance variants in Indian tuberculosis patients to support TB-free goals of India.
+</p>
+<div class="links">
+<a href="https://intgs.nii.ac.in/InTGS/index.php">Webserver</a>
+</div>
+</div>
+
+<div class="project">
+<h2>MutMapTB: Protein Structure-Guided Functional Interpretation of Resistance-Associated Mutations</h2>
+<p>
+<i>In silico</i> functional analysis was conducted on newly discovered mutations associated with antitubercular drug resistance. The mechanistic basis of resistance was examined by mapping mutations onto 3D structures of key drug targets, measuring their proximity to drug binding sites, and comparing their abundance in drug-resistant versus susceptible <i>Mycobacterium tuberculosis</i> strains. <b>A database</b> was established to store mutation abundance data from resistant and susceptible isolates, along with their structural information and visualization.
+</p>
+<div class="links">
+<a href="https://doi.org/10.1016/j.csbj.2025.11.054">Article</a>
+<a href="http://www.nii.ac.in/MutMapTB_database.html">Database</a>
+</div>
+</div>
+
+<div class="project">
+<h2>Type 1 Diabetes Methylation Biomarker Discovery (AI/ML based and Statistical based)</h2>
+<p>
+<b>NGS bisulfite sequencing</b> data were analyzed to identify CpG site methylation patterns associated with Type 1 diabetes detection. Clinical cohort data from American and Chinese patients were examined using <b>statistical, machine learning, and deep learning</b> based methods to discover methylation-based biomarkers for Type 1 diabetes.
 </p>
 </div>
 
-<div class="section">
-<h3>Single-Cell RNA-Seq Analysis of Drug Resistance Biomarkers in Breast Cancer</h3>
-
+<div class="project">
+<h2>SnRNA-seq  Bulk RNA-seq, Spatial Transcriptomics, and Metabolomics  analysis</h2>
 <p>
-This project identified cell type-specific biomarkers for drug resistance in breast cancer using single-cell RNA-sequencing (scRNA-seq) data. A total of 40 human breast cancer samples (20 erlotinib-resistant and 20 susceptible) were analyzed to reveal gene expression signatures and enriched pathways linked to drug response and resistance.
-</p>
-
-<p class="link-block">
-GitHub: <a href="https://github.com/Ankitapal1995/biomarker-drugresistance-scrna.git">https://github.com/Ankitapal1995/biomarker-drugresistance-scrna.git</a>
+<b>SnRNA-seq (single nuclear), Bulk RNA-seq, Spatial transcriptomics, and Metabolomics</b> analyses were performed on several liver disease and healthy samples as part of a multi-modal data assessment for client deliverables. Bulk RNA-seq analysis was used to evaluate gene expression patterns, while spatial transcriptomics analysis using <b>Squidpy</b> provided spatial characterization of transcriptomic signals. Metabolomics analysis was conducted using <b>in-house scripts and MetaboAnalyst</b> to support validation of sample metadata and analytical consistency across datasets, ensuring reliable interpretation for downstream reporting.
 </p>
 </div>
 
-<div class="section">
-<h3>DraVAR: Variant Annotation & Resistance Biomarker Discovery</h3>
-
-<p>
-DraVAR is a Nextflow-based pipeline, implemented in Bash, for analyzing whole genome sequencing data to identify variants associated with drug resistance in <i>Mycobacterium tuberculosis</i>. It integrates established tools for quality control (FastQC, Trimmomatic), alignment (BWA-MEM), variant calling (Samtools, bcftools), and annotation (SnpEff). Using WHO-recommended statistical methods, mutations are graded by confidence levels (high, moderate, low association) based on prevalence and functional impact. The pipeline achieves over 80% accuracy against the gold standard mutation catalogues
-</p>
-
-<p class="link-block">
-GitHub: <a href="https://github.com/Ankitapal1995/DraVAR.git">https://github.com/Ankitapal1995/DraVAR.git</a>
-</p>
-</div>
-
-<div class="section">
-<h3>OncoVAR: Cancer-Specific Somatic Variant Detection</h3>
-
-<p>
-OncoVAR is a custom pipeline for detecting cancer-specific somatic mutations from matched tumor-normal NGS data. It employs samtools and bcftools for variant calling, benchmarks against Mutect2 and VarScan2, and validates findings using a reference gene list to ensure accurate identification of tumor-exclusive mutations. Notably, OncoVAR identified additional mutations in EGFR, CDKN2A, TP53, and MED12 genes missed by Mutect2 and VarScan2, demonstrating enhanced sensitivity in mutation detection.
-</p>
-
-<p class="link-block">
-GitHub: <a href="https://github.com/Ankitapal1995/OncoVAR.git">https://github.com/Ankitapal1995/OncoVAR.git</a>
-</p>
-</div>
-
-<div class="section">
-<h3>InTGS: Tuberculosis Genomic Surveillance Platform</h3>
-
-<p>
-A genomic pipeline was developed to predict antibiotic resistance from tuberculosis patient samples. It was deployed as part of the Indian Tuberculosis Genomic Surveillance Consortium (InTGS), an initiative of the Indian government that collaborates with 10 prominent Indian institutes. The pipeline analyzes drug resistance variants in Indian TB patients to support India's TB-free goals.
-</p>
-
-<p class="link-block">
-Webserver: <a href="https://intgs.nii.ac.in/InTGS/index.php">https://intgs.nii.ac.in/InTGS/index.php</a>
-</p>
-</div>
-
-<div class="section">
-<h3>MutMapTB: Structure-Guided Mutation Interpretation</h3>
-
-<p>
-In silico functional analysis was conducted on newly discovered mutations associated with antitubercular drug resistance. The mechanistic basis of resistance was examined by mapping mutations onto 3D structures of key drug targets, measuring their proximity to drug binding sites, and comparing their abundance in drug-resistant versus susceptible <i>Mycobacterium tuberculosis</i> strains. A database was established to store mutation abundance data from resistant and susceptible isolates, along with their structural information.
-</p>
-
-<p class="link-block">
-Article: <a href="https://doi.org/10.1016/j.csbj.2025.11.054">https://doi.org/10.1096/j.csbj.2025.11.054</a><br>
-Database: <a href="http://www.nii.ac.in/MutMapTB_database.html">http://www.nii.ac.in/MutMapTB_database.html</a>
-</p>
-</div>
-
-<div class="section">
-<h3>Type 1 Diabetes Methylation Biomarker Discovery</h3>
-
-<p>
-NGS bisulfite sequencing and microarray data were analyzed to identify CpG site methylation patterns associated with Type 1 diabetes detection. Clinical cohort data from American and Chinese patients were examined using statistical, machine learning, and deep learning methods to discover methylation-based biomarkers for Type 1 diabetes.
-</p>
-</div>
-
-<div class="section">
-<h3>Bulk RNA, Spatial Transcriptomics, and Metabolomics Integration</h3>
-
-<p>
-Bulk RNA analysis was performed on sarcoma and healthy samples. Spatial transcriptomics analysis using Squidpy and metabolomics analysis using in-house scripts and MetaboAnalyst were conducted to validate metadata curation for client deliverables.
-</p>
+<div class="footer">
+© Ankita Pal – Project Portfolio
 </div>
 
 </div>
