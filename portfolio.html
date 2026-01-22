@@ -54,10 +54,12 @@ h1 {
 }
 .links a {
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 18px;
+  margin-top: 6px;
   text-decoration: none;
   color: var(--accent);
   font-weight: 600;
+  font-size: 1.3rem;   /* noticeable but not shouty */
 }
 .links a:hover {
   text-decoration: underline;
@@ -77,7 +79,7 @@ h1 {
 <div class="subtitle"><em>Computational Biology</em> • <em>AI/ML</em> • <em>Multi-Omics</em></div>
 
 <div class="project">
-<h2>TB-AMRpred: AI/ML-Based Drug Resistance Prediction</h2>
+<h2>TB-AMRpred: AI/ML-Based Drug Resistance Prediction and new drug resistance associated mutation discovery</h2>
 <p>
 This project aimed to predict antimicrobial resistance in <i>Mycobacterium tuberculosis</i> using <b>whole-genome sequencing (WGS)</b> data without relying on predefined resistance markers. Machine learning and deep learning models were developed using <b>XGBoost and artificial neural networks (ANN)</b> and validated on independent datasets. <b>SHAP-based explainable AI</b> was applied to interpret model predictions and identify both known and novel resistance-associated mutations. The models achieved strong predictive performance <b>(90–95% sensitivity and 94–99% specificity across 13 antitubercular drugs)</b> and were implemented as a standalone analytical tool using Python and Bash, with deployment via a web server built using <b>Python Flask and Apache</b> for end-user access.
 </p>
